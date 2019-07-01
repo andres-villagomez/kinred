@@ -55,4 +55,4 @@ This work is obsolete, no applications must derive from it.
 * It does not utilize restful services so it is not useful for any company.
 * Finally the source code is made in Visual Basic, then there is no evolution guarantee.
 * It was made of deprecated libraries and outdated Visual Studio version. 
-*I made it in 2011, so its 7 years aged Today there are much faster, more efficient, more scalable and easier solutions to implement today, that perform the same job but in a better way.
+* I made it in 2011, so its 7 years aged Today there are much faster, more efficient, more scalable and easier solutions to implement today, that perform the same job but in a better way.
