@@ -1,0 +1,29 @@
+﻿<Window x:Class="KinectAudioDemo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:kv="clr-namespace:Microsoft.Samples.Kinect.WpfViewers;assembly=Microsoft.Samples.Kinect.WpfViewers" 
+        Title="Kinect PC Application" Height="600" Width="400" WindowState="Maximized">
+    <Grid ShowGridLines="True" Background="AliceBlue" Height="572">
+        <kv:KinectColorViewer Width="320" Height="240" Grid.ColumnSpan="3" Grid.RowSpan="3" Visibility="Hidden" Name="kinectColorViewer1" Kinect="{Binding ElementName=SensorChooser, Path=Kinect}" Margin="0,0" VerticalAlignment="Top" HorizontalAlignment="Center" />
+        <Border BorderBrush="white" BorderThickness="5" Height="305" HorizontalAlignment="Center" Margin="0,-5,0,0" Name="border1" VerticalAlignment="Center" Width="12" Background="white" CornerRadius="5" RenderTransformOrigin="0.5,0" Visibility="Hidden" >
+            <Border.RenderTransform>
+                <RotateTransform Angle="0" x:Name="rotTx">
+                </RotateTransform>
+            </Border.RenderTransform>
+        </Border>
+        <StackPanel HorizontalAlignment="Left" VerticalAlignment="Bottom" Background="AliceBlue">
+            <Image x:Name="imgWav" Height="100" Width="391"/>
+            <Border x:Name="bdConf" Width="700" Height="30" BorderBrush="AliceBlue" BorderThickness="3" Visibility="Hidden">
+                <TextBlock x:Name="tbConf" Text="SSL Conf: 0.00" Foreground="Yellow"  HorizontalAlignment="Left" VerticalAlignment="Center" Margin="5,0,0,0"/>
+                <Border.Clip>
+                    <RectangleGeometry Rect="0,0,100,50" x:Name="clipConf"/>
+                </Border.Clip>
+            </Border>
+            <TextBlock x:Name="tbColor" Text="" Foreground="Brown" Height="50" FontSize="20" TextAlignment="Center" Padding="0,10,0,0"/>
+            <TextBlock x:Name="tbSpeechStatus" Text="" Foreground="Brown" Height="60" FontSize="16" TextAlignment="Center" Padding="0,10,0,10"/>
+            <CheckBox x:Name="enableAec" Foreground="White" FontSize="20" Checked="EnableAecChecked" Unchecked="EnableAecChecked" IsEnabled="False" Visibility="Hidden">
+            </CheckBox>
+        </StackPanel>
+        <kv:KinectSensorChooser x:Name="SensorChooser" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="350,224,0,166" Visibility="Hidden" />
+    </Grid>
+</Window>
