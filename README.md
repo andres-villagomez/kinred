@@ -28,7 +28,7 @@ Depending on the result an action will be performed.
 
 Microsoft Speech Lib contains the functions to perform speech-to-text activity called “speech-recognition/SR”. It enables real-time transcription of audio streams into text. This service is powered by the same recognition technology that Microsoft uses for Cortana and Office products, and works seamlessly with the translation and text-to-speech.
 
-Microsoft English Dictionary
+## Microsoft English Dictionary
 
 A dictionary is required for the speech to text recognition, since it matches the words and select the results.
 
