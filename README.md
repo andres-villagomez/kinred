@@ -34,17 +34,23 @@ A dictionary is required for the speech to text recognition, since it matches th
 
 ## How does the kinect speech recognition is initialized?
 
+![1](https://user-images.githubusercontent.com/1688498/60684815-74cd2e00-9e65-11e9-869f-aebd58a19935.png)
+
 ## How does voice commands perform actions?
 
 The way is very rudimentary. But Guess What D: ? Today speech recognition platforms like Siri works like this! And I programmed this 8 year ago... !
 
 A Case Loop with several Microsoft commands was programmed, it selects the result given by the dictionary in the match process and call the selected process. 
 
+![2](https://user-images.githubusercontent.com/1688498/60684823-7dbdff80-9e65-11e9-80ab-eaed7653e7ce.png)
+
 Once the command is submitted, it is compared in a case loop, so that the word registered entails the program to perform specific predefined actions.
 
 ## How does the speech is interpreted?
 
 A grammar function is used to set the word parameters, because the dictionary is big and the application is not deployed in a Cloud environment, this method will index the words that we are trying to interpret. A word before the command we are trying to identify must be written in order to prevent the accidental command activation while speaking with other people. (This is a common mistake made even by first world companies, for example like Bancomer)
+
+![3](https://user-images.githubusercontent.com/1688498/60684828-81ea1d00-9e65-11e9-9c13-a332188e6a00.png)
 
 ## Future work for this project
 
