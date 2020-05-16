@@ -51,14 +51,3 @@ Once the command is submitted, it is compared in a case loop, so that the word r
 A grammar function is used to set the word parameters, because the dictionary is big and the application is not deployed in a Cloud environment, this method will index the words that we are trying to interpret. A word before the command we are trying to identify must be written in order to prevent the accidental command activation while speaking with other people. (This is a common mistake made even by first world companies, for example like Bancomer)
 
 ![3](https://user-images.githubusercontent.com/1688498/60684828-81ea1d00-9e65-11e9-9c13-a332188e6a00.png)
-
-## Future work for this project
-
-This work is obsolete, no applications must derive from it.
-
-* It has a strong dependency with Kinect which is why is not profitable.
-* Also it does not work with artificial intelligence.
-* It does not utilize restful services so it is not useful for any company.
-* Finally the source code is made in Visual Basic, then there is no evolution guarantee.
-* It was made of deprecated libraries and outdated Visual Studio version. 
-* I made it in 2011, so its 7 years aged Today there are much faster, more efficient, more scalable and easier solutions to implement today, that perform the same job but in a better way.
